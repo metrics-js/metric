@@ -17,8 +17,8 @@ $ npm install @metrics/metric
 const Metric = require('@metrics/metric');
 
 const metric = new Metric({
-    name: 'foo',
-    description: 'A foo metric',
-    value: 1,
+    name: 'unique_metric_name',
+    description: 'Description of metric being collected',
+    value: 10,
 });
 ```
