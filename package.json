@@ -1,0 +1,31 @@
+{
+  "name": "@metrics/metric",
+  "version": "1.0.0",
+  "description": "The metric class definition which metric objects in the @metrics library is instansiated from",
+  "main": "lib/metric.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metrics-js/metric.git"
+  },
+  "author": "Trygve Lie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metrics-js/metric/issues"
+  },
+  "homepage": "https://github.com/metrics-js/metric#readme",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "tap": "^12.1.1"
+  }
+}
