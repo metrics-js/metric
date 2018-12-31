@@ -22,6 +22,13 @@
     "url": "https://github.com/metrics-js/metric/issues"
   },
   "homepage": "https://github.com/metrics-js/metric#readme",
+  "keywords": [
+    "server-statistics",
+    "server-stats",
+    "statistics",
+    "metrics",
+    "monitoring"
+  ],
   "devDependencies": {
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
