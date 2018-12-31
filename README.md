@@ -3,7 +3,7 @@
 The metric class definition which metric objects is instansiated from.
 
 [![Dependencies](https://img.shields.io/david/metrics-js/metric.svg?style=flat-square)](https://david-dm.org/metrics-js/metric)
-[![Build Status](http://img.shields.io/travis/metrics-js/metric/master.svg?style=flat-square)](https://travis-ci.org/metrics-js/metric)
+[![Build Status](http://img.shields.io/travis/metrics-js/metric/master.svg?style=flat-square)](https://travis-ci.org/metrics-js/metric) [![Greenkeeper badge](https://badges.greenkeeper.io/metrics-js/metric.svg)](https://greenkeeper.io/)
 
 ## Installation
 
