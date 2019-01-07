@@ -57,6 +57,24 @@ is required:
 
 The instansiated object has the following properties:
 
+### type
+
+A hint of what type of metric this is.
+
+ * Valid values: `Number` in the range of `0-7`.
+ * Value is imutable.
+
+Each numeric value reflect one of the following types:
+
+ * `0` represents `unknown`.
+ * `1` represents `gauge`.
+ * `2` represents `counter`.
+ * `3` represents `state_set`.
+ * `4` represents `info`.
+ * `5` represents `cumulative histogram`.
+ * `6` represents `gauge histogram`.
+ * `7` represents `summary`.
+
 ### name
 
 The name of the metric.
