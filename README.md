@@ -62,7 +62,7 @@ The instansiated object has the following properties:
 A hint of what type of metric this is.
 
  * Valid values: `Number` in the range of `0-7`.
- * Value is imutable.
+ * Value is immutable.
 
 Each numeric value reflect one of the following types:
 
@@ -80,14 +80,14 @@ Each numeric value reflect one of the following types:
 The name of the metric.
 
  * Valid characters: `a-z,A-Z,0-9,_`.
- * Value is imutable.
+ * Value is immutable.
 
 ### value
 
 The value of the metric.
 
  * Valid values: `Number` or `String`.
- * Value is imutable.
+ * Value is immutable.
 
 ### source
 
@@ -101,21 +101,21 @@ The source of the metric in terms of where it originated.
 A human readable description of the metric.
 
  * Valid values: `String`.
- * Value is imutable.
+ * Value is immutable.
 
 ### timestamp
 
 A timestamp of when the metric was created.
 
  * Valid values: `Number`.
- * Value is imutable.
+ * Value is immutable.
 
 ### time
 
 N/A.
 
  * Valid values: `Number`.
- * Value is imutable.
+ * Value is immutable.
 
 ### meta
 
@@ -124,4 +124,4 @@ a way to label metrics. Use each key of the meta object as the label name and
 the value as the label value.
 
  * Valid values: `Object`.
- * Value is imutable.
+ * Value is immutable.
