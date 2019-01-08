@@ -41,7 +41,7 @@ tap.test('stringifying includes all keys', (t) => {
     });
     t.equal(
         `${metric}`,
-        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"value":null,"time":null,"meta":{}}',
+        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"type":0,"value":null,"time":null,"meta":{}}',
     );
     t.end();
 });
@@ -53,6 +53,7 @@ tap.test('omitting required keys results in undefined instead of "null"', (t) =>
     t.equal(metric.name, 'valid_name');
     t.equal(metric.description, undefined);
     t.equal(metric.timestamp, undefined);
+    t.equal(metric.type, 0);
     t.equal(metric.time, null);
     t.equal(metric.value, null);
     t.same(metric.meta, {});
@@ -63,9 +64,11 @@ tap.test('the number 0 is treated as a number and does not yeld "null"', (t) => 
     const metric = new Metric({
         name: 'valid_name',
         value: 0,
+        type: 0,
         timestamp: 0,
     });
     t.equal(metric.timestamp, 0);
+    t.equal(metric.type, 0);
     t.equal(metric.value, 0);
     t.end();
 });
@@ -104,6 +107,7 @@ tap.test('util.inspect includes all keys', (t) => {
     const result = `Metric { name: 'valid_name',
   description: 'Valid description',
   timestamp: 12345,
+  type: 0,
   value: 123,
   time: 12345,
   meta: { key: 'value' } }`;
