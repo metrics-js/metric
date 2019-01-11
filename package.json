@@ -7,6 +7,7 @@
     "lib"
   ],
   "scripts": {
+    "bench": "node benchmark/benchmark.js",
     "test": "tap test/*.js",
     "test:coverage": "tap test/*.js --cov",
     "lint": "eslint .",
@@ -33,6 +34,7 @@
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "benchmark": "^2.1.4",
     "tap": "^12.1.1"
   }
 }
