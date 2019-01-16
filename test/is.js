@@ -155,12 +155,14 @@ tap.test('is.validTimestamp() - value is a String - should return false', (t) =>
 });
 
 tap.test('is.validValue() - value is a Integer - should return true', (t) => {
+    t.true(is.validValue(0));
     t.true(is.validValue(10));
     t.end();
 });
 
-tap.test('is.validValue() - value is a Double - should return false', (t) => {
-    t.false(is.validValue(10.4));
+tap.test('is.validValue() - value is a Double - should return true', (t) => {
+    t.true(is.validValue(0.0234));
+    t.true(is.validValue(10.4));
     t.end();
 });
 
