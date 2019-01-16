@@ -38,7 +38,7 @@ This class definition is prefered over object literals when exchanging data over
 object. All undefined properties will have a `null` value, making sure they are kept
 when serialized to JSON.
 
-The metric object aim to be compatible with the [Open Metrics](https://github.com/OpenObservability/OpenMetrics)
+The metric object aims to be compatible with the [Open Metrics](https://github.com/OpenObservability/OpenMetrics)
 initiative.
 
 ## Constructor
@@ -58,7 +58,7 @@ is required:
  * **name** - `String` - The name of the metric.
  * **description** - `String` - The description of the metric.
 
-Each property value is validated and will throw is a property value is found to be invalid.
+Each property value is validated and will throw if a property value is found to be invalid.
 
 ## Properties
 
@@ -125,7 +125,7 @@ A timestamp of when the metric was created.
 
 ### labels
 
-A `Array` of labeled values. Each item in the `Array` must be an
+An `Array` of labeled values. Each item in the `Array` must be a
 `Label` object. Please see the Labels section for further info.
 
  * Valid value: `Array` of `Label` objects.
