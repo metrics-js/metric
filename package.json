@@ -1,6 +1,6 @@
 {
   "name": "@metrics/metric",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The metric class definition which metric objects in the @metrics library is instansiated from",
   "main": "lib/metric.js",
   "files": [
