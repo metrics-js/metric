@@ -96,7 +96,7 @@ tap.test('Metric() - only required arguments is set - should set defaults on opt
     t.equal(metric.type, 0);
     t.same(metric.labels, []);
     t.equal(metric.source, null);
-    t.equal(metric.meta, null);
+    t.same(metric.meta, {});
 
     clock.uninstall();
 
@@ -144,7 +144,7 @@ tap.test('Metric.toJSON() - only required arguments is set - should contain all 
     t.same(serialized.labels, []);
     t.equal(serialized.value, null);
     t.equal(serialized.type, 0);
-    t.equal(serialized.meta, null);
+    t.same(serialized.meta, {});
     t.equal(metric.name, 'valid_name');
 
     clock.uninstall();
@@ -187,7 +187,7 @@ tap.test('Metric.toPrimitive() - stringify - should includes all keys', (t) => {
     });
     t.equal(
         `${metric}`,
-        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"type":0,"value":null,"labels":[],"meta":null}',
+        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"type":0,"value":null,"labels":[],"meta":{}}',
     );
     t.end();
 });
