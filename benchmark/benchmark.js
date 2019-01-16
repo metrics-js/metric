@@ -17,16 +17,23 @@ const add = (name, fn) => {
 
 const now = Date.now();
 
-add('new Metric()', () => {
+add('new Metric() - Cached timestamp', () => {
     const m = new Metric({
         name: 'foo',
-        description: 'foobar',
+        description: 'foo_bar',
         timestamp: now,
     });
 });
 
+add('new Metric() - Create timestamp', () => {
+    const m = new Metric({
+        name: 'foo',
+        description: 'foo_bar',
+    });
+});
+
 suite
-    .on('cycle', ev => {
+    .on('cycle', (ev) => {
         console.log(ev.target.toString());
         if (ev.target.error) {
             console.error(ev.target.error);
