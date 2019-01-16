@@ -232,6 +232,7 @@ tap.test('Metric() - util.inspect - should includes all keys', (t) => {
   type: 0,
   value: 123,
   labels: [],
+  time: undefined,
   meta: { key: 'value' } }`;
 
     t.equal(util.inspect(metric), result);
