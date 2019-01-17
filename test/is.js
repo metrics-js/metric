@@ -213,6 +213,12 @@ tap.test('is.validLabelValue() - value is a String - should return true', (t) =>
     t.end();
 });
 
+tap.test('is.validLabelValue() - value is a Boolean - should return true', (t) => {
+    t.true(is.validLabelValue(false));
+    t.true(is.validLabelValue(true));
+    t.end();
+});
+
 tap.test('is.validLabelValue() - value is illegal - should return false', (t) => {
     t.false(is.validLabelValue(['foo']));
     t.end();
