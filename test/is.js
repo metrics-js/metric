@@ -186,6 +186,38 @@ tap.test('is.validLabel() - value is legal - should return true', (t) => {
     t.end();
 });
 
+tap.test('is.validLabelValue() - value is a Integer - should return true', (t) => {
+    t.true(is.validLabelValue(0));
+    t.true(is.validLabelValue(10));
+    t.end();
+});
+
+tap.test('is.validLabelValue() - value is a Double - should return true', (t) => {
+    t.true(is.validLabelValue(0.0234));
+    t.true(is.validLabelValue(10.4));
+    t.end();
+});
+
+tap.test('is.validLabelValue() - value is "null" - should return true', (t) => {
+    t.true(is.validLabelValue(null));
+    t.end();
+});
+
+tap.test('is.validLabelValue() - value is "undefined" - should return true', (t) => {
+    t.true(is.validLabelValue(undefined));
+    t.end();
+});
+
+tap.test('is.validLabelValue() - value is a String - should return true', (t) => {
+    t.true(is.validLabelValue('foo'));
+    t.end();
+});
+
+tap.test('is.validLabelValue() - value is illegal - should return false', (t) => {
+    t.false(is.validLabelValue(['foo']));
+    t.end();
+});
+
 tap.test('is.validLabel() - not a label object - should return false', (t) => {
     t.false(is.validLabel({ bar: 'a' }));
     t.false(is.validLabel({ name: 'a', bar: 'a' }));
@@ -199,12 +231,14 @@ tap.test('is.validLabel() - value of "name" property is illegal - should return 
 });
 
 tap.test('is.validLabel() - value of "value" property is illegal - should return false', (t) => {
-    t.false(is.validLabel({ name: 'foo', value: 'bar' }));
+    t.false(is.validLabel({ name: 'foo', value: ['bar'] }));
     t.end();
 });
 
 tap.test('is.validLabels() - value is Array with legal objects - should return true', (t) => {
     t.true(is.validLabels([{ name: 'bar', value: 5 }, { name: 'foo', value: 10 }]));
+    t.true(is.validLabels([{ name: 'bar', value: 1.4 }, { name: 'foo', value: 0.234 }]));
+    t.true(is.validLabels([{ name: 'bar', value: 'foo' }, { name: 'foo', value: 'bar' }]));
     t.end();
 });
 

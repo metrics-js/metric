@@ -159,5 +159,5 @@ The name of the label.
 
 The value of the label.
 
- * Valid value: `Integer` or `null`.
+ * Valid value: `Integer`, `String` or `null`.
  * Is required.
