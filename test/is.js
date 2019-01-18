@@ -245,6 +245,7 @@ tap.test('is.validLabels() - value is Array with legal objects - should return t
     t.true(is.validLabels([{ name: 'bar', value: 5 }, { name: 'foo', value: 10 }]));
     t.true(is.validLabels([{ name: 'bar', value: 1.4 }, { name: 'foo', value: 0.234 }]));
     t.true(is.validLabels([{ name: 'bar', value: 'foo' }, { name: 'foo', value: 'bar' }]));
+    t.true(is.validLabels([{ name: 'bar', value: null }, { name: 'foo', value: 0 }]));
     t.end();
 });
 
