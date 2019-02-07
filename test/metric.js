@@ -187,7 +187,7 @@ tap.test('Metric.toPrimitive() - stringify - should includes all keys', (t) => {
     });
     t.equal(
         `${metric}`,
-        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"type":0,"value":null,"labels":[],"meta":{}}',
+        'Metric {"name":"valid_name","description":"Valid description","timestamp":12345,"type":0,"value":null,"labels":[],"time":null,"meta":{}}',
     );
     t.end();
 });
@@ -232,7 +232,7 @@ tap.test('Metric() - util.inspect - should includes all keys', (t) => {
   type: 0,
   value: 123,
   labels: [],
-  time: undefined,
+  time: null,
   meta: { key: 'value' } }`;
 
     t.equal(util.inspect(metric), result);
