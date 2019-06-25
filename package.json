@@ -31,7 +31,7 @@
     "monitoring"
   ],
   "devDependencies": {
-    "eslint": "^5.10.0",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "benchmark": "^2.1.4",
