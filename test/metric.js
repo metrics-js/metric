@@ -226,14 +226,16 @@ tap.test('Metric() - util.inspect - should includes all keys', (t) => {
         meta: { key: 'value' },
     });
 
-    const result = `Metric { name: 'valid_name',
+    const result = `Metric {
+  name: 'valid_name',
   description: 'Valid description',
   timestamp: 12345,
   type: 0,
   value: 123,
   labels: [],
   time: null,
-  meta: { key: 'value' } }`;
+  meta: { key: 'value' }
+}`;
 
     t.equal(util.inspect(metric), result);
     t.end();
