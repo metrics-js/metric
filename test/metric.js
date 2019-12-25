@@ -5,6 +5,11 @@ const tap = require('tap');
 const lolex = require('lolex');
 const Metric = require('../lib/metric');
 
+// remove newlines and whitespaces in a string
+const flattenValue = (str) => {
+    return str.replace(/(\r\n|\n|\r)/gm, '').replace(/\s/g, '');
+};
+
 tap.test('Metric() - object type - should be Metric', (t) => {
     const metric = new Metric({ name: 'foo', description: 'bar' });
     t.equal(Object.prototype.toString.call(metric), '[object Metric]');
@@ -227,17 +232,19 @@ tap.test('Metric() - util.inspect - should includes all keys', (t) => {
     });
 
     const result = `Metric {
-  name: 'valid_name',
-  description: 'Valid description',
-  timestamp: 12345,
-  type: 0,
-  value: 123,
-  labels: [],
-  time: null,
-  meta: { key: 'value' }
-}`;
+        name: 'valid_name',
+        description: 'Valid description',
+        timestamp: 12345,
+        type: 0,
+        value: 123,
+        labels: [],
+        time: null,
+        meta: {
+            key: 'value'
+        }
+    }`;
 
-    t.equal(util.inspect(metric), result);
+    t.equal(flattenValue(util.inspect(metric)), flattenValue(result));
     t.end();
 });
 
