@@ -2,10 +2,9 @@
 
 The metric class definition which metric objects is instansiated from.
 
-[![Dependencies](https://img.shields.io/david/metrics-js/metric.svg?style=flat-square)](https://david-dm.org/metrics-js/metric)
-[![Build Status](http://img.shields.io/travis/metrics-js/metric/master.svg?style=flat-square)](https://travis-ci.org/metrics-js/metric)
-[![Greenkeeper badge](https://badges.greenkeeper.io/metrics-js/metric.svg?style=flat-square)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/metrics-js/metric/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/metrics-js/metric?targetFile=package.json)
+[![Dependencies](https://img.shields.io/david/metrics-js/metric.svg)](https://david-dm.org/metrics-js/metric)
+[![GitHub Actions status](https://github.com/metrics-js/metric/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/metrics-js/metric/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
+[![Known Vulnerabilities](https://snyk.io/test/github/metrics-js/metric/badge.svg?targetFile=package.json)](https://snyk.io/test/github/metrics-js/metric?targetFile=package.json)
 
 ## Installation
 
