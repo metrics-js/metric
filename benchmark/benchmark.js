@@ -3,7 +3,7 @@
 /* eslint no-unused-vars: "off", import/no-extraneous-dependencies: "off", no-console: "off" */
 
 const benchmark = require('benchmark');
-const Metric = require('../');
+const Metric = require('..');
 
 const suite = new benchmark.Suite();
 
