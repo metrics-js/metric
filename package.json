@@ -33,11 +33,18 @@
     "monitoring"
   ],
   "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "11.1.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.2.1",
+    "@semantic-release/npm": "11.0.1",
+    "@semantic-release/release-notes-generator": "12.1.0",
     "benchmark": "2.1.4",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.26.0",
     "lolex": "6.0.0",
+    "semantic-release": "22.0.7",
     "tap": "14.11.0"
   }
 }
