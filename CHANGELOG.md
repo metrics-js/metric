@@ -1,3 +1,10 @@
+## [2.3.3](https://github.com/metrics-js/metric/compare/v2.3.2...v2.3.3) (2023-11-08)
+
+
+### Bug Fixes
+
+* cjs-shaped type declaration ([a449eb7](https://github.com/metrics-js/metric/commit/a449eb74b37e2bd42bdf8cbec350fa1858fcba6f))
+
 # Changelog
 
 Notable changes to this project.
