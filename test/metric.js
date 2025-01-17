@@ -44,7 +44,7 @@ tap.test('Metric() - "name" argument is not valid - should throw', (t) => {
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "10", description: "bar" }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "name" is not legal/);
+	}, /Argument "name" must be a valid OpenMetrics name, was '10'. See https:\/\/metrics-js.github.io\/reference\/metric\/#name/);
 	t.end();
 });
 
@@ -52,7 +52,7 @@ tap.test('Metric() - "timestamp" argument is not valid - should throw', (t) => {
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "foo", description: "bar", timestamp: "10" }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "timestamp" is not legal/);
+	}, /Argument "timestamp" must be a finite number, was '10'/);
 	t.end();
 });
 
@@ -60,7 +60,7 @@ tap.test('Metric() - "description" argument is not valid - should throw', (t) =>
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "foo", description: 10 }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "description" is not legal/);
+	}, /Argument "description" must be a string, was 'number'/);
 	t.end();
 });
 
@@ -68,7 +68,7 @@ tap.test('Metric() - "source" argument is not valid - should throw', (t) => {
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "foo", description: "bar", source: 10 }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "source" is not legal/);
+	}, /Argument "source" must be a string, was 'number'/);
 	t.end();
 });
 
@@ -76,7 +76,7 @@ tap.test('Metric() - "type" argument is not valid - should throw', (t) => {
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "foo", description: "bar", type: "10" }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "type" is not legal/);
+	}, /Argument "type" must be between 0 and 7, was '10'/);
 	t.end();
 });
 
@@ -84,7 +84,7 @@ tap.test('Metric() - "value" argument is not valid - should throw', (t) => {
 	t.plan(1);
 	t.throws(() => {
 		const metric = new Metric({ name: "foo", description: "bar", value: "10" }); // eslint-disable-line no-unused-vars
-	}, /Provided value to argument "value" is not legal/);
+	}, /Argument "value" must be a finite number, was '10'/);
 	t.end();
 });
 
