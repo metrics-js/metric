@@ -29,14 +29,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm ci
 
-      - name: Run all tests
-        run: npm test
+      - run: npm test
 
-      - name: Release and publish
-        run: npx semantic-release
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
