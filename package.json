@@ -37,7 +37,7 @@
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.3.5",
-    "@semantic-release/npm": "12.0.1",
+    "@semantic-release/npm": "12.0.2",
     "@semantic-release/release-notes-generator": "14.0.3",
     "benchmark": "2.1.4",
     "eslint": "9.29.0",
@@ -46,7 +46,7 @@
     "lolex": "6.0.0",
     "globals": "15.9.0",
     "prettier": "3.6.1",
-    "semantic-release": "24.2.1",
+    "semantic-release": "24.2.5",
     "tap": "18.8.0"
   }
 }
