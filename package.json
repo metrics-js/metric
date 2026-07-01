@@ -41,7 +41,7 @@
     "lolex": "6.0.0",
     "globals": "16.5.0",
     "prettier": "3.8.3",
-    "semantic-release": "25.0.3",
+    "semantic-release": "25.0.5",
     "tap": "21.7.1"
   }
 }
